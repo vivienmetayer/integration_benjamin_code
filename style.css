@@ -1,0 +1,219 @@
+@font-face {
+	font-family: 'gtfri';
+	src: url('fonts/GT-Flexa-Regular-Italic-Trial.woff2') format('woff2');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'gtfr';
+	src: url('fonts/GT-Flexa-Regular-Trial.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'gtf-cm-bl';
+	src: url('fonts/GT-Flexa-X-Compressed-Black-Trial.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'gtf-cm-bo';
+	src: url('fonts/GT-Flexa-X-Compressed-Bold-Trial.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'gtfxebl';
+	src: url('fonts/GT-Flexa-X-Expanded-Black-Trial.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'gtfxebo';
+	src: url('fonts/GT-Flexa-X-Expanded-Bold-Trial.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background: darkblue;
+}
+
+#main_section {
+	position: relative;
+	margin: 20px;
+	border: 7px solid yellow;
+	height: 886px;
+}
+
+@keyframes title_slide {
+	0%      {transform: translate(-200%)}
+	100%    {transform: translate(-400%)}
+}
+
+@keyframes job_slide {
+	0%      {transform: translate(-400%)}
+	100%    {transform: translate(-200%)}
+}
+
+header li{
+	font-family: gtf-cm-bl, serif;
+	font-size: 160px;
+	color: yellow;
+	height: 175px;
+	width: 710px;
+	display: inline-block;
+	animation-name: title_slide;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+header li:nth-child(even) {
+	-webkit-text-stroke: 2px yellow;
+	color: transparent;
+}
+
+header ul {
+	margin: 0;
+	height: 175px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.line {
+	height: 7px;
+	background: yellow;
+}
+
+#job_title li {
+	font-family: gtf-cm-bo, serif;
+	font-size: 63px;
+	color: yellow;
+	/*height: 63px;*/
+	width: 680px;
+	display: inline-block;
+	animation-name: job_slide;
+	animation-duration: 15s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+#job_title li:nth-child(even) {
+	-webkit-text-stroke: 2px yellow;
+	color: transparent;
+}
+
+#job_title ul {
+	margin: 0;
+	height: 71px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#presentation {
+	font-size: 18px;
+	font-family: gtfr, serif;
+	color: yellow;
+	margin: 69px 91px 0 0 ;
+	float: right;
+	width: 380px;
+}
+
+#mail {
+
+}
+
+svg {
+	height: 22px;
+	fill: yellow;
+	display: inline-block;
+}
+
+#mail_text {
+	position: relative;
+	top: -4px;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+#image_group {
+	height: 100%;
+	position: relative;
+	bottom: 0;
+}
+
+#image_group img {
+	width: 755px;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	left: 32px;
+}
+
+#small_circle {
+	z-index: 2;
+	position: absolute;
+	height: 100%;
+	width: 611px;
+}
+
+#big_circle {
+	z-index: 0;
+	position: absolute;
+	height: 100%;
+	width: 611px;
+}
+
+#content {
+	position: relative;
+	width: 100%;
+	height: 626px;
+}
+
+@media screen and (max-width: 1450px){
+	#image_group {
+		height: 100%;
+		position: relative;
+		bottom: auto;
+		max-width: 80%;
+	}
+
+	#image_group img {
+		width: auto;
+		height: auto;
+		position: relative;
+		z-index: 1;
+		bottom: auto;
+		vertical-align: bottom;
+		max-width: 100%;
+	}
+
+	#presentation {
+		position: static;
+		font-size: 18px;
+		font-family: gtfr, serif;
+		color: yellow;
+		margin: 69px 91px ;
+		float: none;
+		width: auto;
+	}
+
+	#main_section {
+		position: static;
+		margin: 20px;
+		border: 7px solid yellow;
+		height: auto;
+	}
+
+	#content {
+		position: static;
+		width: 100%;
+		height: auto;
+	}
+}
