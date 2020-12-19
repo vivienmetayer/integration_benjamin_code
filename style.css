@@ -41,13 +41,13 @@
 }
 
 body {
-	background: darkblue;
+	background: #000432;
 }
 
 #main_section {
 	position: relative;
 	margin: 20px;
-	border: 7px solid yellow;
+	border: 7px solid #fdf301;
 	height: 886px;
 }
 
@@ -64,7 +64,7 @@ body {
 header li{
 	font-family: gtf-cm-bl, serif;
 	font-size: 160px;
-	color: yellow;
+	color: #fdf301;
 	height: 175px;
 	width: 710px;
 	display: inline-block;
@@ -75,7 +75,7 @@ header li{
 }
 
 header li:nth-child(even) {
-	-webkit-text-stroke: 2px yellow;
+	-webkit-text-stroke: 2px #fdf301;
 	color: transparent;
 }
 
@@ -88,13 +88,13 @@ header ul {
 
 .line {
 	height: 7px;
-	background: yellow;
+	background: #fdf301;
 }
 
 #job_title li {
 	font-family: gtf-cm-bo, serif;
 	font-size: 63px;
-	color: yellow;
+	color: #fdf301;
 	/*height: 63px;*/
 	width: 680px;
 	display: inline-block;
@@ -105,7 +105,7 @@ header ul {
 }
 
 #job_title li:nth-child(even) {
-	-webkit-text-stroke: 2px yellow;
+	-webkit-text-stroke: 2px #fdf301;
 	color: transparent;
 }
 
@@ -119,7 +119,7 @@ header ul {
 #presentation {
 	font-size: 18px;
 	font-family: gtfr, serif;
-	color: yellow;
+	color: #fdf301;
 	margin: 69px 91px 0 0 ;
 	float: right;
 	width: 380px;
@@ -131,7 +131,7 @@ header ul {
 
 svg {
 	height: 22px;
-	fill: yellow;
+	fill: #fdf301;
 	display: inline-block;
 }
 
@@ -198,7 +198,7 @@ svg {
 		position: static;
 		font-size: 18px;
 		font-family: gtfr, serif;
-		color: yellow;
+		color: #fdf301;
 		margin: 69px 91px ;
 		float: none;
 		width: auto;
@@ -207,7 +207,7 @@ svg {
 	#main_section {
 		position: static;
 		margin: 20px;
-		border: 7px solid yellow;
+		border: 7px solid #fdf301;
 		height: auto;
 	}
 
